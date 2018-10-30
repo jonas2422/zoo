@@ -1,10 +1,113 @@
 header {
-  background-color: black;
-  height: 10vh;
-  width: 100%;
+  background: #323232;
 }
 
-header nav {
-  color: red;
+header ul {
+  padding: 1% 0 !important;
+  list-style-type: none;
+  margin: 0;
+  height: auto;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+header ul li {
+  float: right;
+  position: relative;
+}
+
+header ul li a {
+  display: block;
+  border-radius: 25px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+header ul li a:hover {
+  background-color: #111;
+  color: white;
+  text-decoration: none;
+}
+
+header #logo {
+  background-image: url(../galery/logo.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 200px;
+}
+
+header #logo a:hover {
+  background-color: inherit;
+}
+
+header #buy-ticket {
+  margin-right: 13.5%;
+}
+
+header #buy-ticket a {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #DC1F28;
+  width: 150px;
+  overflow: hidden;
+  height: 200px;
+  -webkit-transform: translateY(-37%);
+          transform: translateY(-37%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .split {
+  margin-right: 2%;
+}
+
+header .margin-right li:nth-child(1) {
+  margin-right: 15%;
+}
+
+.sub-nav {
+  background-color: black;
+  height: auto;
+  padding: 1% 0;
+  color: white;
+}
+
+.sub-nav p {
+  margin: 0;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sub-nav h3 {
+  text-align: center;
+  font-size: 23px;
+  margin: 0;
+}
+
+.sub-nav div:nth-child(3) p {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.sub-nav i {
+  margin-right: 2%;
 }
 /*# sourceMappingURL=style.css.map */
