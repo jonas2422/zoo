@@ -3,4 +3,8 @@ header {
   height: 10vh;
   width: 100%;
 }
+
+header nav {
+  color: red;
+}
 /*# sourceMappingURL=style.css.map */
