@@ -1,3 +1,36 @@
+@charset "UTF-8";
+header {
+  background-color: black;
+  height: 10vh;
+  width: 100%;
+}
+
+#calendar-container {
+  padding: 10px;
+  width: 210px;
+  height: 240px;
+  text-align: center;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: Arial;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#d3d3d3));
+  background-image: linear-gradient(#fff, #d3d3d3);
+}
+
+#calendar-container > div {
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+#calendar-month-year {
+  margin: 5px;
+}
+
+#calendar-dates > table > tr > td {
+  padding: 5px;
+}
+
 header {
   background: #323232;
 }
@@ -97,7 +130,6 @@ header .margin-right li:nth-child(1) {
 
 .sub-nav h3 {
   text-align: center;
-  font-size: 23px;
   margin: 0;
 }
 
@@ -111,29 +143,143 @@ header .margin-right li:nth-child(1) {
   margin-right: 2%;
 }
 
-#calendar-container {
-  padding: 10px;
-  width: 210px;
-  height: 240px;
-  text-align: center;
-  border: 1px solid #eee;
-  border-radius: 10px;
-  font-size: 16px;
-  font-family: Arial;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#d3d3d3));
-  background-image: linear-gradient(#fff, #d3d3d3);
+.map {
+  overflow: hidden;
+  background: #E8DBA7;
 }
 
-#calendar-container > div {
+.map .map-inside {
+  height: 200%;
+  width: 100vw;
+  cursor: pointer;
+  background-image: url(../galery/zoo_map.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.map .map-inside .pointer {
+  height: 30px;
+  width: 30px;
+  background: white;
+  border: 5px solid #DC1F28;
+  border-radius: 50%;
+  position: absolute;
+  top: 70%;
+  left: 60%;
+}
+
+.map .map-inside .pointer:hover {
+  background: #DC1F28;
+}
+
+.dialog {
+  background: white !important;
+  border: none !important;
+}
+
+.ui-widget-content {
+  border: none !important;
+}
+
+.dialog-header {
+  position: relative;
+  height: 180px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../galery/lion.jpg);
+}
+
+.dialog-header i {
+  position: absolute;
+  right: 5%;
+  color: white;
+  font-size: 40px;
+}
+
+.ui-dialog .ui-dialog-content {
   padding: 0;
-  margin-bottom: 10px;
 }
 
-#calendar-month-year {
-  margin: 5px;
+​
+.ui-modal .ui-tooltip-content {
+  padding: 0px;
 }
 
-#calendar-dates > table > tr > td {
-  padding: 5px;
+.ui-widget-overlay.ui-front {
+  /* you want this */
+  opacity: .75;
+}
+
+.someclass .ui-widget-header {
+  display: none;
+  padding: 0 !important;
+}
+
+.ui-dialog, .ui-corner-all, .ui-widget, .ui-widget-content, .ui-front, .someclass {
+  padding: 0 !important;
+  border-radius: 25px;
+}
+
+.dialog-inside-cont {
+  padding: 3%;
+  margin: 3%;
+  text-align: center;
+}
+
+.dialog-inside-cont p {
+  margin: 0;
+  padding: 0;
+}
+
+.dialog-inside-cont .dialog-btn {
+  background: #97BE0D;
+  border: 2px solid #97BE0D;
+  color: white;
+  display: block;
+  padding: 10px 20px;
+  width: 150px;
+  margin: 0 auto;
+  margin-top: 2%;
+  text-transform: uppercase;
+}
+
+.dialog-inside-cont .dialog-btn:hover {
+  color: #97BE0D;
+  background: white;
+  text-decoration: none;
+}
+
+.dialog-inside-cont .btntwo {
+  width: 200px;
+  margin-top: 5%;
+}
+
+.dialog-inside-cont .split {
+  margin-top: 5%;
+}
+
+.dialog-inside-cont .row {
+  margin-top: 5%;
+}
+
+.dialog-inside-cont .event-time {
+  border: 2px solid #E7E7E7;
+  border-radius: 25px;
+  display: block;
+  height: auto;
+  padding: 15% 0.2%;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.dialog-inside-cont .event-time .time {
+  color: #DC1F28;
+  font-size: 20px;
+}
+
+.dialog-inside-cont .event-time .event-name {
+  color: #6D6D6D;
 }
 /*# sourceMappingURL=style.css.map */
