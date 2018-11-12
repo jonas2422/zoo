@@ -12,4 +12,7 @@
 	box-shadow: none;
 	margin: 0 -15px;
 	border-radius: 0;
+	@media (min-width: 992px) {
+		margin: 0;
+	}
 }
