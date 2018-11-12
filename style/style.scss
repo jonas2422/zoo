@@ -1,31 +1,19 @@
-header{
-    background-color: black;
-    height: 10vh;
-    width: 100%;
-}
-
-#calendar-container{
-    padding: 10px;
-    width: 210px;
-    height: 240px;
-    text-align: center;
-    border: 1px solid #eee;
-    border-radius: 10px;
-    font-size: 16px;
-    font-family: Arial;
-    background-image: linear-gradient(#fff, #d3d3d3);
-}
-
-#calendar-container>div{
-    padding: 0;
-    margin-bottom: 10px;
-}
-
-#calendar-month-year{
-    margin: 5px;
-}
-
-#calendar-dates>table>tr>td{
-    padding: 5px;
-}
-@import "includes";
+@import "variables";
+@import "mixins";
+@import "icons";
+@import 'resets/reboot';
+@import 'resets/type';
+@import "components/navbar";
+@import "components/calendar";
+@import "components/buttons";
+@import "components/card";
+@import 'utilities/borders';
+@import 'utilities/position';
+@import 'utilities/sizing';
+@import 'utilities/text-breaks';
+@import 'utilities/text-emphasis';
+@import 'utilities/shadows';
+@import 'utilities/background-variant';
+@import 'layout/header';
+@import "views/map";
+@import "views/calendar";

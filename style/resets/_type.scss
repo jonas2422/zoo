@@ -1,0 +1,18 @@
+h1 {
+	font-size: $h1-font-size;
+	@media (min-width: 992px) {
+		font-size: $h1-font-size-lg;
+	}
+}
+h2 {
+	font-size: $h2-font-size;
+	@media (min-width: 992px) {
+		font-size: $h2-font-size-lg;
+	}
+}
+h3 {
+	font-size: $h3-font-size;
+	@media (min-width: 992px) {
+		font-size: $h3-font-size-lg;
+	}
+}

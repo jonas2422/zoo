@@ -1,0 +1,15 @@
+.card {
+	border: none;
+	box-shadow: 0 1px 3px rgba(0,0,0,.2);
+}
+.card-body {
+	padding: $card-spacer-x;
+	@media (min-width: 992px) {
+		padding: $card-spacer-x-lg;
+	}
+}
+.card-slide-bottom {
+	box-shadow: none;
+	margin: 0 -15px;
+	border-radius: 0;
+}
