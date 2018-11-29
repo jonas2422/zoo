@@ -1,0 +1,82 @@
+//
+// TODO : Mixin this!
+[class^=grid] {
+	display: grid;
+	grid-gap: 1rem;
+}
+.grid {
+	display: grid;
+	grid-gap: 1rem;
+}
+
+.grid-1 {
+	grid-template-columns: repeat(1, 1fr);
+}
+.grid-sm-1 {
+	@media (min-width: 576px) {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+.grid-md-1 {
+	@media (min-width: 768px) {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+.grid-lg-1 {
+	@media (min-width: 992px) {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+.grid-xl-1 {
+	@media (min-width: 1200px) {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+.grid-2 {
+	grid-template-columns: repeat(2, 1fr);
+}
+.grid-sm-2 {
+	@media (min-width: 576px) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+.grid-md-2 {
+	@media (min-width: 768px) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+.grid-lg-2 {
+	@media (min-width: 992px) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+.grid-xl-2 {
+	@media (min-width: 1200px) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+.grid-3 {
+	grid-template-columns: repeat(3, 1fr);
+}
+.grid-sm-3 {
+	@media (min-width: 576px) {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+.grid-md-3 {
+	@media (min-width: 768px) {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+.grid-lg-3 {
+	@media (min-width: 992px) {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+.grid-xl-3 {
+	@media (min-width: 1200px) {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
