@@ -24,3 +24,11 @@
 		background-color: white!important;
 	}
 }
+.bg-white-80 {
+	background-color: rgba(255,255,255,.8) !important;	
+}
+.bg-lg-white-80 {
+	@media (min-width: 992px) {
+		background-color: rgba(255,255,255,.8) !important;
+	}
+}
