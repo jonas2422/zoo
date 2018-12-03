@@ -1,12 +1,12 @@
 $(document).ready(function(){
 
-var map = $(".sub-nav").outerHeight() + $("header").outerHeight();
+var map = $("nav").outerHeight();
 var d = $(window).height();
 var height = d - map;
 console.log(height);
 $(".map").css("height", height);
 
-$('.map-inside').bind('mousewheel', function(e){
+/*$('.map-inside').bind('mousewheel', function(e){
     var maph = $(".map-inside").height();
     var mapw =  $(".map-inside").width();
     if(e.originalEvent.wheelDelta /120 > 0) {
@@ -46,7 +46,10 @@ $('.map-inside').bind('mousewheel', function(e){
              
             
         }
-         });
+         });*/
+         if ($(window).width() < 600)
+         size = $(window).width();
+         else
          size = 600;
          $( ".dialog" ).dialog({
               clickOutside: true,
