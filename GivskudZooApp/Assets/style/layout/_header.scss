@@ -1,0 +1,88 @@
+header{
+  
+    ul {
+        padding: 1% 0!important;
+        list-style-type: none;
+        margin: 0;
+        height: auto;
+        padding: 0;
+        overflow: hidden;
+       
+        li {
+            float: right;
+            position: relative;
+            a {
+                display: block;
+                border-radius: 25px;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                &:hover {
+                    background-color: #111;
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    
+
+
+    #logo{
+        background-image: url(../galery/logo.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 50px;
+        width: 200px;
+        a:hover{
+            background-color: inherit;
+        }
+    }
+    #buy-ticket{
+        margin-right: 13.5%;
+        a{
+            position: absolute;
+            border-radius: 50%;
+            background-color: #DC1F28;
+            width: 150px;
+            overflow: hidden;
+            height: 200px;
+            transform: translateY(-37%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .split{
+        margin-right: 2%;
+    }
+    .margin-right{
+        li:nth-child(1){
+            margin-right: 15%;
+        }
+    }
+}
+.sub-nav{
+    background-color: black;
+    height: auto;
+    padding: 1% 0;
+    color: white;
+    p{
+        margin: 0;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    h3{
+        text-align: center;
+        margin: 0;
+    }
+    div:nth-child(3) p{
+        justify-content: flex-end;
+    }
+    i{
+        margin-right: 2%;
+    }
+}

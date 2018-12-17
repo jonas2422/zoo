@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Our.Umbraco.DocumentTypePicker</name>
+    </assembly>
+    <members>
+        <member name="T:RB.DocumentTypePicker.Controllers.Api.DocumentTypePickerApiController">
+            <summary>
+            Umbraco API Controller for the Document Type Picker data type.
+            </summary>
+        </member>
+        <member name="M:RB.DocumentTypePicker.Controllers.Api.DocumentTypePickerApiController.GetAllDocumentTypes">
+            <summary>
+            Get method to retrieve a list of all document types.
+            </summary>
+            <returns>A sorted list of all document types.</returns>
+        </member>
+        <member name="T:RB.DocumentTypePicker.Converters.DocumentTypePickerValueConverter">
+            <summary>
+            Value converter class to convert a json document type picker value object
+            to a list of document type aliases.
+            </summary>
+        </member>
+        <member name="M:RB.DocumentTypePicker.Converters.DocumentTypePickerValueConverter.ConvertDataToSource(Umbraco.Core.Models.PublishedContent.PublishedPropertyType,System.Object,System.Boolean)">
+            <summary>
+            Method to convert a property value to alist of document 
+            type aliases
+            </summary>
+            <param name="propertyType">The current published property
+            type to convert.</param>
+            <param name="source">The original property data.</param>
+            <param name="preview">True if in preview mode.</param>
+            <returns>A list of document type aliases.</returns>
+        </member>
+        <member name="M:RB.DocumentTypePicker.Converters.DocumentTypePickerValueConverter.IsConverter(Umbraco.Core.Models.PublishedContent.PublishedPropertyType)">
+            <summary>
+            Method to see if the current property type is of type
+            document type picker.
+            </summary>
+            <param name="propertyType">The current property type.</param>
+            <returns>True if the current property type of of type
+            document type picker.</returns>
+        </member>
+    </members>
+</doc>
