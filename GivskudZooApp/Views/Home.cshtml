@@ -1,0 +1,54 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.Home>
+
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+    Layout = "Master.cshtml";
+}
+<header id="head-height">
+    <div class="map">
+        <div class="map-inside">
+            <div class="pointer">
+
+            </div>
+
+        </div>
+    </div>
+</header>
+    
+    <div class="dialog">
+        <div class="dialog-header">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="dialog-inside-cont">
+            <h2>Lion</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt quae non eius aliquid saepe quo </p>
+            <a class="dialog-btn" href="">READ MORE</a>
+            <h2 class="split">Next events</h2>
+            <div class="row">
+                <div class="col-4">
+                    <div class="event-time">
+                        <p class="date">MON 10/19</p>
+                        <p class="time">10:00 - 12:00</p>
+                        <p class="event-name">Feeding</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="event-time">
+                        <p class="date">MON 10/19</p>
+                        <p class="time">10:00 - 12:00</p>
+                        <p class="event-name">Feeding</p>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="event-time">
+                        <p class="date">MON 10/19</p>
+                        <p class="time">10:00 - 12:00</p>
+                        <p class="event-name">Feeding</p>
+                    </div>
+                </div>
+            </div>
+            <a class="dialog-btn btntwo" href="">GO TO CALANDAR</a>
+        </div>
+    </div>
+

@@ -1,0 +1,27 @@
+@import "variables";
+@import "mixins";
+@import "icons";
+@import 'resets/reboot';
+@import 'resets/type';
+@import "components/navbar";
+@import "components/calendar";
+@import "components/buttons";
+@import "components/card";
+@import 'utilities/borders';
+@import 'utilities/position';
+@import 'utilities/sizing';
+@import 'utilities/text-breaks';
+@import 'utilities/text-emphasis';
+@import 'utilities/shadows';
+@import 'utilities/background-variant';
+@import 'layout/header';
+@import 'layout/grid';
+@import "views/map";
+@import "views/calendar";
+@import "views/animals";
+@import "views/animals/alpaca";
+.cards {
+    :hover {
+        opacity: 0.9;
+    }
+}
