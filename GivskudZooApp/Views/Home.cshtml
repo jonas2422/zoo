@@ -1,20 +1,16 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.Home>
-
+@using Terratype;
 @using ContentModels = Umbraco.Web.PublishedContentModels;
 @{
     Layout = "Master.cshtml";
 }
-<header id="head-height">
-    <div class="map">
-        <div class="map-inside">
-            <div class="pointer">
 
-            </div>
+@foreach (var record in Model.Content.Nested)
+{
+}
 
-        </div>
-    </div>
-</header>
-    
+@Html.Terratype(Model.Content.Map);
+
     <div class="dialog">
         <div class="dialog-header">
             <i class="fas fa-times"></i>

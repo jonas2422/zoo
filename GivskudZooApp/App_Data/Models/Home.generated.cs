@@ -44,5 +44,14 @@ namespace Umbraco.Web.PublishedContentModels
 		{
 			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
 		}
+
+		///<summary>
+		/// Map list
+		///</summary>
+		[ImplementPropertyType("mapList")]
+		public Archetype.Models.ArchetypeModel MapList
+		{
+			get { return this.GetPropertyValue<Archetype.Models.ArchetypeModel>("mapList"); }
+		}
 	}
 }

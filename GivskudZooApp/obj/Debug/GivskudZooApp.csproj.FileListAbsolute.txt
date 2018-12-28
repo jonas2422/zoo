@@ -167,3 +167,7 @@ C:\Users\jona1411\source\repos\GivskudZooApp\GivskudZooApp\obj\Debug\GivskudZooA
 C:\Users\jona1411\source\repos\GivskudZooApp\GivskudZooApp\obj\Debug\GivskudZooApp.dll
 C:\Users\jona1411\source\repos\GivskudZooApp\GivskudZooApp\obj\Debug\GivskudZooApp.pdb
 C:\Users\jona1411\source\repos\GivskudZooApp\GivskudZooApp\obj\Debug\GivskudZooApp.csprojAssemblyReference.cache
+C:\xampp\htdocs\zoo\GivskudZooApp\obj\Debug\GivskudZooApp.csprojAssemblyReference.cache
+C:\xampp\htdocs\zoo\GivskudZooApp\obj\Debug\GivskudZooApp.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\zoo\GivskudZooApp\obj\Debug\GivskudZooApp.dll
+C:\xampp\htdocs\zoo\GivskudZooApp\obj\Debug\GivskudZooApp.pdb
