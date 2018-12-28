@@ -46,12 +46,12 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
-		/// Map list
+		/// Map
 		///</summary>
-		[ImplementPropertyType("mapList")]
-		public Archetype.Models.ArchetypeModel MapList
+		[ImplementPropertyType("map")]
+		public IEnumerable<IPublishedContent> Map
 		{
-			get { return this.GetPropertyValue<Archetype.Models.ArchetypeModel>("mapList"); }
+			get { return this.GetPropertyValue<IEnumerable<IPublishedContent>>("map"); }
 		}
 	}
 }

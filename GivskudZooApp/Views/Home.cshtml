@@ -5,46 +5,74 @@
     Layout = "Master.cshtml";
 }
 
-@foreach (var record in Model.Content.Nested)
+@Html.Terratype(new Options
 {
+    Provider = new Terratype.Providers.LeafletV1(),
+    Height = 680,
+    MapSetId = 2,
+    Zoom = 15,
+    Position = new Terratype.CoordinateSystems.Wgs84("55.8082618, 9.3505412")
+})
+
+@foreach (var record in Model.Content.Map)
+{
+    var mapName = record.GetPropertyValue<string>("mapName");
+    var map = record.GetPropertyValue<Terratype.Models.Model>("map");
+    IPublishedContent typedContentPicker = record.GetPropertyValue<IPublishedContent>("animal");
+
+
+    @Html.Terratype(new Options { MapSetId = 2, Tag = "@animalName" }, map,
+        @<text>
+            <div class="card">
+                    <div class="card-img-top">
+                        <img src="https://legacy.lib.utexas.edu/maps/historical/newark_nj_1922.jpg" alt="" />
+                    </div>
+                    <div class="card-body">
+                        @if (typedContentPicker != null)
+                        {
+                            <h2 class="card-title">@typedContentPicker.Name</h2>
+                        }
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+        </text>
+    )
 }
 
-@Html.Terratype(Model.Content.Map);
-
-    <div class="dialog">
-        <div class="dialog-header">
-            <i class="fas fa-times"></i>
-        </div>
-        <div class="dialog-inside-cont">
-            <h2>Lion</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt quae non eius aliquid saepe quo </p>
-            <a class="dialog-btn" href="">READ MORE</a>
-            <h2 class="split">Next events</h2>
-            <div class="row">
-                <div class="col-4">
-                    <div class="event-time">
-                        <p class="date">MON 10/19</p>
-                        <p class="time">10:00 - 12:00</p>
-                        <p class="event-name">Feeding</p>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="event-time">
-                        <p class="date">MON 10/19</p>
-                        <p class="time">10:00 - 12:00</p>
-                        <p class="event-name">Feeding</p>
-                    </div>
-                </div>
-
-                <div class="col-4">
-                    <div class="event-time">
-                        <p class="date">MON 10/19</p>
-                        <p class="time">10:00 - 12:00</p>
-                        <p class="event-name">Feeding</p>
-                    </div>
+<div class="dialog">
+    <div class="dialog-header">
+        <i class="fas fa-times"></i>
+    </div>
+    <div class="dialog-inside-cont">
+        <h2>Lion</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt quae non eius aliquid saepe quo </p>
+        <a class="dialog-btn" href="">READ MORE</a>
+        <h2 class="split">Next events</h2>
+        <div class="row">
+            <div class="col-4">
+                <div class="event-time">
+                    <p class="date">MON 10/19</p>
+                    <p class="time">10:00 - 12:00</p>
+                    <p class="event-name">Feeding</p>
                 </div>
             </div>
-            <a class="dialog-btn btntwo" href="">GO TO CALANDAR</a>
+            <div class="col-4">
+                <div class="event-time">
+                    <p class="date">MON 10/19</p>
+                    <p class="time">10:00 - 12:00</p>
+                    <p class="event-name">Feeding</p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="event-time">
+                    <p class="date">MON 10/19</p>
+                    <p class="time">10:00 - 12:00</p>
+                    <p class="event-name">Feeding</p>
+                </div>
+            </div>
         </div>
+        <a class="dialog-btn btntwo" href="">GO TO CALANDAR</a>
     </div>
+</div>
 

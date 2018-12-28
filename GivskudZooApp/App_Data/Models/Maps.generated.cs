@@ -20,16 +20,16 @@ using Umbraco.ModelsBuilder.Umbraco;
 
 namespace Umbraco.Web.PublishedContentModels
 {
-	/// <summary>Map</summary>
-	[PublishedContentModel("map")]
-	public partial class Map : PublishedContentModel
+	/// <summary>Maps</summary>
+	[PublishedContentModel("maps")]
+	public partial class Maps : PublishedContentModel
 	{
 #pragma warning disable 0109 // new is redundant
-		public new const string ModelTypeAlias = "map";
+		public new const string ModelTypeAlias = "maps";
 		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
 #pragma warning restore 0109
 
-		public Map(IPublishedContent content)
+		public Maps(IPublishedContent content)
 			: base(content)
 		{ }
 
@@ -40,18 +40,27 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 #pragma warning restore 0109
 
-		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Map, TValue>> selector)
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Maps, TValue>> selector)
 		{
 			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
 		}
 
 		///<summary>
-		/// Map coordinates
+		/// Animal
 		///</summary>
-		[ImplementPropertyType("mapCoordinates")]
-		public Terratype.Models.Model MapCoordinates
+		[ImplementPropertyType("animal")]
+		public IPublishedContent Animal
 		{
-			get { return this.GetPropertyValue<Terratype.Models.Model>("mapCoordinates"); }
+			get { return this.GetPropertyValue<IPublishedContent>("animal"); }
+		}
+
+		///<summary>
+		/// Map
+		///</summary>
+		[ImplementPropertyType("map")]
+		public Terratype.Models.Model Map
+		{
+			get { return this.GetPropertyValue<Terratype.Models.Model>("map"); }
 		}
 
 		///<summary>
