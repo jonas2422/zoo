@@ -27,7 +27,7 @@ namespace GivskudZooApi.Controller
                 NewsItems news = new NewsItems();
                 news.id = item.Id;
                 news.EventHeadline = item.GetValue<string>("eventTitle");
-                news.EventDescription = item.GetValue<string>("descriptionConten");
+                news.EventDescription = item.GetValue<string>("descriptionContent");
                 news.EventTime = item.GetValue<DateTime>("event");
                 result.Add(news);
             }
