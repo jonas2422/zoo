@@ -210,7 +210,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\AnimalController.cs" />
+    <Compile Include="Controller\EventsController.cs" />
     <Compile Include="Models\AnimalItems.cs" />
+    <Compile Include="Models\NewsItems.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
