@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocumentType Folders="Pages">
+  <Info>
+    <Name>Calendar item</Name>
+    <Alias>calendarItem</Alias>
+    <Icon>icon-document</Icon>
+    <Thumbnail>folder.png</Thumbnail>
+    <Description />
+    <AllowAtRoot>False</AllowAtRoot>
+    <IsListView>False</IsListView>
+    <Compositions />
+    <AllowedTemplates>
+      <Template>CalendarItem</Template>
+    </AllowedTemplates>
+    <DefaultTemplate>CalendarItem</DefaultTemplate>
+  </Info>
+  <Structure />
+  <GenericProperties>
+    <GenericProperty>
+      <Name>event headline</Name>
+      <Alias>eventHeadline</Alias>
+      <Type>Umbraco.Textbox</Type>
+      <Definition>5862d471-6fa7-43f5-a4ad-37e5bd1f60e0</Definition>
+      <Tab>Calendar content</Tab>
+      <SortOrder>0</SortOrder>
+      <Mandatory>False</Mandatory>
+    </GenericProperty>
+    <GenericProperty>
+      <Name>Event time</Name>
+      <Alias>eventTime</Alias>
+      <Type>Umbraco.DateTime</Type>
+      <Definition>68aa17ad-4289-4825-88d2-6e1a0ee3f71b</Definition>
+      <Tab>Calendar content</Tab>
+      <SortOrder>1</SortOrder>
+      <Mandatory>False</Mandatory>
+    </GenericProperty>
+  </GenericProperties>
+  <Tabs>
+    <Tab>
+      <Id>35</Id>
+      <Caption>Calendar content</Caption>
+      <SortOrder>0</SortOrder>
+    </Tab>
+  </Tabs>
+</DocumentType>

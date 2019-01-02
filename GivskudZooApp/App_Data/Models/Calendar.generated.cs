@@ -44,5 +44,14 @@ namespace Umbraco.Web.PublishedContentModels
 		{
 			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
 		}
+
+		///<summary>
+		/// feature Calendar
+		///</summary>
+		[ImplementPropertyType("featureCalendar")]
+		public IEnumerable<IPublishedContent> FeatureCalendar
+		{
+			get { return this.GetPropertyValue<IEnumerable<IPublishedContent>>("featureCalendar"); }
+		}
 	}
 }

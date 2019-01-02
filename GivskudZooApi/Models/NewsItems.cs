@@ -9,7 +9,8 @@ namespace GivskudZooApi.Models
     public class NewsItems
     {
         public int id { get; set; }
-        public string EventItem { get; set; }
-        public string EventDesc { get; set; }
+        public string EventHeadline { get; set; }
+        public DateTime EventTime { get; set; }
+        public string EventDescription { get; set; }
     }
 }
