@@ -1,6 +1,6 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.Home>
-@using Terratype;
 @using ContentModels = Umbraco.Web.PublishedContentModels;
+@using Terratype;
 @{
     Layout = "Master.cshtml";
 }
@@ -14,29 +14,29 @@
     Position = new Terratype.CoordinateSystems.Wgs84("55.8082618, 9.3505412")
 })
 
-@foreach (var record in Model.Content.Map)
+@foreach (Maps Maps in Model.Content.Map)
 {
-    var mapName = record.GetPropertyValue<string>("mapName");
-    var map = record.GetPropertyValue<Terratype.Models.Model>("map");
-    IPublishedContent typedContentPicker = record.GetPropertyValue<IPublishedContent>("animal");
+    var animal = Maps.GetPropertyValue<IPublishedContent>("animal");
 
+    if (animal != null)
+    {
+        var image = animal.GetPropertyValue("imageAnimal");
+        @Html.Terratype(new Options { MapSetId = 2, Tag = "@animalName" }, Maps.Map,
+                    @<text>
+                        <div class="card">
+                            <div class="card-img-top">
+                                <img src="@image" alt="" />
+                            </div>
+                            <div class="card-body">
 
-    @Html.Terratype(new Options { MapSetId = 2, Tag = "@animalName" }, map,
-        @<text>
-            <div class="card">
-                    <div class="card-img-top">
-                        <img src="https://legacy.lib.utexas.edu/maps/historical/newark_nj_1922.jpg" alt="" />
-                    </div>
-                    <div class="card-body">
-                        @if (typedContentPicker != null)
-                        {
-                            <h2 class="card-title">@typedContentPicker.Name</h2>
-                        }
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-        </text>
-    )
+                                <h2 class="card-title">@animal.GetPropertyValue("animalName")</h2>
+
+                                <p class="card-text">@animal.GetPropertyValue("shortDescription")</p>
+                            </div>
+                        </div>
+                    </text>
+                                          )
+    }
 }
 
 <div class="dialog">

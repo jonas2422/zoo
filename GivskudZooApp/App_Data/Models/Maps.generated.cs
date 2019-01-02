@@ -62,14 +62,5 @@ namespace Umbraco.Web.PublishedContentModels
 		{
 			get { return this.GetPropertyValue<Terratype.Models.Model>("map"); }
 		}
-
-		///<summary>
-		/// Map name
-		///</summary>
-		[ImplementPropertyType("mapName")]
-		public string MapName
-		{
-			get { return this.GetPropertyValue<string>("mapName"); }
-		}
 	}
 }
