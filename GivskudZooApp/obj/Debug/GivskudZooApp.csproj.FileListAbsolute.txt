@@ -167,14 +167,9 @@ C:\Users\jona1411\source\repos\GivskudZooApp\GivskudZooApp\obj\Debug\GivskudZooA
 C:\Users\jona1411\source\repos\GivskudZooApp\GivskudZooApp\obj\Debug\GivskudZooApp.dll
 C:\Users\jona1411\source\repos\GivskudZooApp\GivskudZooApp\obj\Debug\GivskudZooApp.pdb
 C:\Users\jona1411\source\repos\GivskudZooApp\GivskudZooApp\obj\Debug\GivskudZooApp.csprojAssemblyReference.cache
-<<<<<<< HEAD
-C:\xampp\htdocs\zoo\GivskudZooApp\obj\Debug\GivskudZooApp.csprojAssemblyReference.cache
-C:\xampp\htdocs\zoo\GivskudZooApp\obj\Debug\GivskudZooApp.csproj.CoreCompileInputs.cache
-C:\xampp\htdocs\zoo\GivskudZooApp\obj\Debug\GivskudZooApp.dll
-C:\xampp\htdocs\zoo\GivskudZooApp\obj\Debug\GivskudZooApp.pdb
-=======
 C:\MAMP\htdocs\zoo\GivskudZooApp\obj\Debug\GivskudZooApp.csprojAssemblyReference.cache
 C:\MAMP\htdocs\zoo\GivskudZooApp\obj\Debug\GivskudZooApp.csproj.CoreCompileInputs.cache
 C:\MAMP\htdocs\zoo\GivskudZooApp\obj\Debug\GivskudZooApp.dll
 C:\MAMP\htdocs\zoo\GivskudZooApp\obj\Debug\GivskudZooApp.pdb
->>>>>>> news-api
+C:\xampp\htdocs\zoo\GivskudZooApp\obj\Debug\GivskudZooApp.csprojAssemblyReference.cache
+C:\xampp\htdocs\zoo\GivskudZooApp\obj\Debug\GivskudZooApp.csproj.CoreCompileInputs.cache
