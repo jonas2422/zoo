@@ -44,5 +44,14 @@ namespace Umbraco.Web.PublishedContentModels
 		{
 			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
 		}
+
+		///<summary>
+		/// Map
+		///</summary>
+		[ImplementPropertyType("map")]
+		public IEnumerable<IPublishedContent> Map
+		{
+			get { return this.GetPropertyValue<IEnumerable<IPublishedContent>>("map"); }
+		}
 	}
 }

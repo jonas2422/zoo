@@ -1,54 +1,79 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.Home>
-
 @using ContentModels = Umbraco.Web.PublishedContentModels;
+@using Terratype;
 @{
     Layout = "Master.cshtml";
 }
-<header id="head-height">
-    <div class="map">
-        <div class="map-inside">
-            <div class="pointer">
 
+@Html.Terratype(new Options
+{
+    Provider = new Terratype.Providers.LeafletV1(),
+    Height = 680,
+    MapSetId = 2,
+    Zoom = 15,
+    Position = new Terratype.CoordinateSystems.Wgs84("55.8082618, 9.3505412")
+})
+
+@foreach (Maps Maps in Model.Content.Map)
+{
+    var animal = Maps.GetPropertyValue<IPublishedContent>("animal");
+
+    if (animal != null)
+    {
+        var image = animal.GetPropertyValue("imageAnimal");
+        @Html.Terratype(new Options { MapSetId = 2, Tag = "@animalName" }, Maps.Map,
+                    @<text>
+                        <div class="card">
+                            <div class="card-img-top">
+                                <img src="@image" alt="" />
+                            </div>
+                            <div class="card-body">
+
+                                <h2 class="card-title">@animal.GetPropertyValue("animalName")</h2>
+
+                                <p class="card-text">@animal.GetPropertyValue("shortDescription")</p>
+                                <a href="@animal.Url" class="btn btn-primary">Find out more</a>
+                            </div>
+                        </div>
+                    </text>
+                                          )
+    }
+}
+
+<div class="dialog">
+    <div class="dialog-header">
+        <i class="fas fa-times"></i>
+    </div>
+    <div class="dialog-inside-cont">
+        <h2>Lion</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt quae non eius aliquid saepe quo </p>
+        <a class="dialog-btn" href="">READ MORE</a>
+        <h2 class="split">Next events</h2>
+        <div class="row">
+            <div class="col-4">
+                <div class="event-time">
+                    <p class="date">MON 10/19</p>
+                    <p class="time">10:00 - 12:00</p>
+                    <p class="event-name">Feeding</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="event-time">
+                    <p class="date">MON 10/19</p>
+                    <p class="time">10:00 - 12:00</p>
+                    <p class="event-name">Feeding</p>
+                </div>
             </div>
 
-        </div>
-    </div>
-</header>
-    
-    <div class="dialog">
-        <div class="dialog-header">
-            <i class="fas fa-times"></i>
-        </div>
-        <div class="dialog-inside-cont">
-            <h2>Lion</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt quae non eius aliquid saepe quo </p>
-            <a class="dialog-btn" href="">READ MORE</a>
-            <h2 class="split">Next events</h2>
-            <div class="row">
-                <div class="col-4">
-                    <div class="event-time">
-                        <p class="date">MON 10/19</p>
-                        <p class="time">10:00 - 12:00</p>
-                        <p class="event-name">Feeding</p>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="event-time">
-                        <p class="date">MON 10/19</p>
-                        <p class="time">10:00 - 12:00</p>
-                        <p class="event-name">Feeding</p>
-                    </div>
-                </div>
-
-                <div class="col-4">
-                    <div class="event-time">
-                        <p class="date">MON 10/19</p>
-                        <p class="time">10:00 - 12:00</p>
-                        <p class="event-name">Feeding</p>
-                    </div>
+            <div class="col-4">
+                <div class="event-time">
+                    <p class="date">MON 10/19</p>
+                    <p class="time">10:00 - 12:00</p>
+                    <p class="event-name">Feeding</p>
                 </div>
             </div>
-            <a class="dialog-btn btntwo" href="">GO TO CALANDAR</a>
         </div>
+        <a class="dialog-btn btntwo" href="">GO TO CALANDAR</a>
     </div>
+</div>
 
