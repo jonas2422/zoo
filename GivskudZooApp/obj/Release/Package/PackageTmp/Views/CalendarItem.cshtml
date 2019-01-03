@@ -1,0 +1,44 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.CalendarItem>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+
+@{
+    Layout = "Master.cshtml";
+    var calenderItem = Model.Content;
+}
+
+<body class="page-animals">
+    <section class="bg-light bg-lg-none mvh-100 p-0 py-lg-5 page-animals">
+        <div class="container">
+            <div class="content bg-none bg-lg-white-80 rounded">
+                <div class="row no-gutters">
+                    <div class="col-12 col-lg-7 col-xl-8">
+                        <div class="card card-slide-bottom rounded-top rounded-left-lg shadow-3-top">
+                            <img class="card-img-top rounded-left-lg" src="@calenderItem.ImageEvent.Url" alt="@calenderItem.AltDescription" height="200">
+                            <div class="card-body p-lg-4">
+                                <h1 class="text-center">@calenderItem.EventTitle</h1>
+                                <p>@calenderItem.DescriptionContent</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="product-image-container">
+                    <img class="product-image" src="@calenderItem.ImageEvent.Url" />
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h1>@calenderItem.EventTitle</h1>
+                <div class="product-price">@calenderItem.Event.ToString("HH:mm")</div>
+                <div class="product-teaser">@calenderItem.DescriptionContent</div>
+            </div>
+        </div>
+    </div>
+</section>

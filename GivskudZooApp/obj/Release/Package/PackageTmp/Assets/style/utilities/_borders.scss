@@ -1,0 +1,92 @@
+//
+// Border-radius
+//
+
+.rounded {
+	border-radius: $border-radius !important;
+}
+.rounded-lg {
+	@media (min-width: 992px) {
+		border-radius: $border-radius !important;
+	}
+}
+
+.rounded-top {
+	border-top-left-radius: $border-radius !important;
+	border-top-right-radius: $border-radius !important;
+	border-bottom-left-radius: 0 !important;
+	border-bottom-right-radius: 0 !important;
+}
+.rounded-top-lg {
+	@media (min-width: 992px) {
+		border-top-left-radius: $border-radius !important;
+		border-top-right-radius: $border-radius !important;
+		border-bottom-left-radius: 0 !important;
+		border-bottom-right-radius: 0 !important;
+	}
+}
+
+.rounded-right {
+	border-top-left-radius: 0 !important;
+	border-top-right-radius: $border-radius !important;
+	border-bottom-left-radius: 0 !important;
+	border-bottom-right-radius: $border-radius !important;
+}
+.rounded-right-lg {
+	@media (min-width: 992px) {
+		border-top-left-radius: 0 !important;
+		border-top-right-radius: $border-radius !important;
+		border-bottom-left-radius: 0 !important;
+		border-bottom-right-radius: $border-radius !important;
+	}
+}
+
+.rounded-bottom {
+	@media (min-width: 992px) {
+		border-top-left-radius: 0 !important;
+		border-top-right-radius: 0 !important;
+		border-bottom-left-radius: $border-radius !important;
+		border-bottom-right-radius: $border-radius !important;
+	}
+}
+.rounded-bottom-lg {
+	@media (min-width: 992px) {
+		border-top-left-radius: 0 !important;
+		border-top-right-radius: 0 !important;
+		border-bottom-right-radius: $border-radius !important;
+		border-bottom-left-radius: $border-radius !important;
+	}
+}
+
+.rounded-left {
+	border-top-left-radius: $border-radius !important;
+	border-top-right-radius: 0 !important;
+	border-bottom-left-radius: $border-radius !important;
+	border-bottom-right-radius: 0 !important;
+}
+.rounded-left-lg {
+	@media (min-width: 992px) {
+		border-top-left-radius: $border-radius !important;
+		border-top-right-radius: 0 !important;
+		border-bottom-left-radius: $border-radius !important;
+		border-bottom-right-radius: 0 !important;
+	}
+}
+
+.rounded-circle {
+	border-radius: 50% !important;
+}
+.rounded-circle-lg {
+	@media (min-width: 992px) {
+		border-radius: 50% !important;
+	}
+}
+
+.rounded-0 {
+	border-radius: 0 !important;
+}
+.rounded-0-lg {
+	@media (min-width: 992px) {
+		border-radius: 0 !important;
+	}
+}

@@ -1,0 +1,45 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.Animal>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+
+
+    Layout = "Master.cshtml";
+    var animal = Model.Content;
+}
+<body class="page-animals">
+    <section class="bg-light bg-lg-none mvh-100 p-0 py-lg-5 page-animals">
+        <div class="container">
+            <div class="content bg-none bg-lg-white-80 rounded">
+                <div class="row no-gutters">
+                    <div class="col-12 col-lg-7 col-xl-8">
+                        <div class="card card-slide-bottom rounded-top rounded-left-lg shadow-3-top">
+                            <img class="card-img-top rounded-left-lg" src="@animal.ImageAnimal.Url" alt="Alpaca" height="200px">
+                            <div class="card-body p-lg-4">
+                                <h1 class="text-center">@animal.AnimalName</h1>
+                                <p>@animal.AnimalDescription</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-5 col-xl-4">
+                        <div class="py-3 p-lg-4">
+                            <h2>Facts</h2>
+                            <dl class="row">
+                                <dt class="col-sm-3">Height</dt>
+                                <dd class="col-sm-9">@animal.AnimalHeight cm</dd>
+                                <dt class="col-sm-3">Weight</dt>
+                                <dd class="col-sm-9">@animal.AnimalWeight kg</dd>
+                            </dl>
+                            <h2>Gallery</h2>
+                            <div class="grid-1">
+                                <img class="img-fluid" src="@animal.GalleryImage1.Url" alt="Alpaca">
+                                <img class="img-fluid" src="@animal.GalleryImage2.Url" alt="Alpaca">
+                                <img class="img-fluid" src="@animal.GalleryImage3.Url" alt="Alpaca">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </body>

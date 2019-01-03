@@ -1,0 +1,73 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.Animals>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+
+@{
+    Layout = "Master.cshtml";
+   
+}
+
+@* the fun starts here *@
+	<body class="page-animals">
+    <section class="bg-light bg-lg-none mvh-100 p-0 py-lg-5 page-animals">
+        <div class="container">
+            <div class="content bg-none bg-lg-white-80 rounded">
+                <div class="row no-gutters">
+                    <div class="col-12 col-lg-5 col-xl-4">
+                        <div class="py-3 p-lg-4">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="">
+                                        <h2>Continent</h2>
+                                        <div class="btn-toggle-group">
+                                            <button type="button" class="btn btn-primary btn-sm">All</button>
+                                            <button type="button" class="btn btn-primary btn-sm">Africa</button>
+                                            <button type="button" class="btn btn-primary btn-sm">Asia</button>
+                                            <button type="button" class="btn btn-primary btn-sm">Australia</button>
+                                            <button type="button" class="btn btn-primary btn-sm">North America</button>
+                                            <button type="button" class="btn btn-primary btn-sm">South America</button>
+                                            <button type="button" class="btn btn-primary btn-sm">Intercontinental</button>
+                                            <button type="button" class="btn btn-primary btn-sm">Domestic</button>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <h2>Animal Group</h2>
+                                        <div class="btn-toggle-group">
+                                            <button type="button" class="btn btn-primary btn-sm">All</button>
+                                            <button type="button" class="btn btn-primary btn-sm">Birds</button>
+                                            <button type="button" class="btn btn-primary btn-sm">Mammals</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-7 col-xl-8">
+                        <div class="card card-slide-bottom rounded-top rounded-right-lg shadow-3-top">
+                            <div class="card-body p-lg-4">
+                                <h1 class="text-center">Animals</h1>
+                                <div class="grid-1 grid-lg-2 grid-xl-3">
+                                    @if (Model.Content.FeaturedAnimals != null)
+                                    {
+                                        foreach (Animal animal in Model.Content.FeaturedAnimals)
+                                        {
+                                            <div class="card">
+                                                <a href="@animal.Url">
+                                                    <img class="card-img-top" src="@animal.BannerImage.Url" alt="Alpaka">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">@animal.AnimalName</h5>
+                                                        <p class="card-text">@animal.ShortDescription</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        }
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </body>
+

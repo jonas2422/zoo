@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,AAAA,aAAa,CAAC;EACd,gBAAgB,EAAE,4BAA4B;EAC9C,mBAAmB,EAAE,aAAa;EAClC,iBAAiB,EAAE,SAAS;EAC5B,eAAe,EAAE,KAAK;CACzB",
+    "sources": [
+        "alpaca.scss"
+    ],
+    "names": [],
+    "file": "alpaca.css"
+}
