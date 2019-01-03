@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
-  <parameter name="umbracoDbDSN-Web.config Connection String" description="umbracoDbDSN Connection String used in web.config by the application to access the database." defaultValue="Data Source=|DataDirectory|\Umbraco.sdf;Flush Interval=1;" tags="SqlConnectionString">
+  <parameter name="umbracoDbDSN-Web.config Connection String" description="umbracoDbDSN Connection String used in web.config by the application to access the database." defaultValue="server=sql.webq.dk;database=Group5_18_Umbraco;user id=group518;password=Odense2018!" tags="SqlConnectionString">
     <parameterEntry kind="XmlFile" scope="C:\\xampp\\htdocs\\zoo\\GivskudZooApp\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='umbracoDbDSN']/@connectionString" />
   </parameter>
 </parameters>
