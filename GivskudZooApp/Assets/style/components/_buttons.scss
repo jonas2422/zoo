@@ -3,6 +3,24 @@
 	font-weight: 700;
 	font-family: 'Roboto Condensed', sans-serif;
 }
+.btn-primary,
+.leaflet-container .btn-primary {
+    color: #fff;
+    background-color: #97BE0D;
+    border-color: #97BE0D;
+    &:hover {
+        background-color: lighten(#97BE0D, 10%);
+        border-color: lighten(#97BE0D, 10%);
+    }
+    &:active {
+        background-color: lighten(#97BE0D, 15%);
+        border-color: lighten(#97BE0D, 15%);
+    }
+    &:focus,
+    &.focus {
+        box-shadow: 0 0 0 0.2rem rgba(151,190,13,.5);
+    }
+}
 .btn-link {
 	color: $secondary-color;
 	background-color: transparent;

@@ -341,7 +341,6 @@
     <Content Include="Assets\script\map.js" />
     <Content Include="Assets\script\script.js" />
     <Content Include="Assets\style\style.css" />
-    <Content Include="Assets\style\views\animals\alpaca.css" />
     <Content Include="config\grid.editors.config.js" />
     <Content Include="config\Lang\cs-CZ.user.xml" />
     <Content Include="config\Lang\da-DK.user.xml" />
@@ -409,7 +408,6 @@
     <Content Include="Assets\style\utilities\_sizing.scss" />
     <Content Include="Assets\style\utilities\_text-breaks.scss" />
     <Content Include="Assets\style\utilities\_text-emphasis.scss" />
-    <Content Include="Assets\style\views\animals\alpaca.css.map" />
     <Content Include="Assets\style\views\animals\alpaca.scss" />
     <Content Include="Assets\style\views\_animals.scss" />
     <Content Include="Assets\style\views\_calendar.scss" />
