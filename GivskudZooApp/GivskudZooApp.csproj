@@ -443,6 +443,7 @@
     <Content Include="Views\AnimalCollection.cshtml" />
     <Content Include="Views\Category.cshtml" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
+    <Content Include="Views\Maps.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
